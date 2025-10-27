@@ -1,0 +1,13 @@
+[Unit]
+Description=CPU Monitor & Fan Controller
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root
+ExecStart=/usr/bin/python3 /root/cpu-fan-controller/main.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=CPU Monitor & Fan Controller
+Exec=/usr/local/bin/cpu-fan-controller
+Terminal=false
+X-GNOME-Autostart-enabled=true
+Comment=Monitor CPU i kontrola wentylatorów
