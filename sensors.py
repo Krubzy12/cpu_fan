@@ -67,6 +67,9 @@ class SensorReader:
                                 return v
                             except:
                                 continue
+                    except Exception:
+                        # ignore errors reading this hwmon entry and continue to next
+                        continue
         return None
 
     def get_temperatures(self):
